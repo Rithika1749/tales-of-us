@@ -7,33 +7,72 @@
             color: white;
             text-align: center;
             font-family: Georgia;
+            margin: 0;
+            padding: 20px;
         }
-        img {
+
+        /* Logo section */
+        .logo-container {
             position: absolute;
             right: 20px;
             top: 20px;
-            width: 50px;
+            text-align: center;
         }
-        a {
+
+        .logo-container img {
+            width: 50px;
+            display: block;
+            margin: auto;
+        }
+
+        .auth-links a {
+            display: inline-block;
+            margin: 4px 6px;
+            font-size: 13px;
+            color: #cfe8d8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation links */
+        a.nav {
             color: #cfe8d8;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
+        a.nav:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
+
     <h1>The Tales of Us</h1>
 
-    <img src="img/logo.jpg" alt="Logo">
+    <!-- Logo + Login/Register -->
+    <div class="logo-container">
+        <img src="img/logo.jpg" alt="Logo">
+        <div class="auth-links">
+            <a href="login.html" target="mainFrame">Login</a> |
+            <a href="register.html" target="mainFrame">Register</a>
+        </div>
+    </div>
 
- <p>
-    <a href="characters.html" target="_blank">Characters</a>
-    <a href="portal.html" target="_blank">Portal</a>
-    <a href="creatures.html" target="_blank">Creatures</a>
-    <a href="magic.html" target="_blank">Magic Rules</a>
-</p>
+    <!-- Main navigation -->
+    <p>
+        <a class="nav" href="characters.html" target="_blank">Characters</a>
+        <a class="nav" href="portal.html" target="_blank">Portal</a>
+        <a class="nav" href="creatures.html" target="_blank">Creatures</a>
+        <a class="nav" href="magic.html" target="_blank">Magic Rules</a>
+    </p>
 
 </body>
 </html>
+
